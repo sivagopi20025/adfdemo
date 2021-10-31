@@ -1,0 +1,39 @@
+{
+	"name": "ds_blobsink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_abs_firstls001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "global"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "match",
+				"type": "String"
+			},
+			{
+				"name": "playerid",
+				"type": "String"
+			},
+			{
+				"name": "playername",
+				"type": "String"
+			},
+			{
+				"name": "playerscore",
+				"type": "String"
+			}
+		]
+	}
+}

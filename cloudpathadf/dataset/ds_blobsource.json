@@ -1,0 +1,40 @@
+{
+	"name": "ds_blobsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_abs_firstls001",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "bronze/match/2021/10oct/25",
+				"container": "global"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "match",
+				"type": "String"
+			},
+			{
+				"name": "playerid",
+				"type": "String"
+			},
+			{
+				"name": "playername",
+				"type": "String"
+			},
+			{
+				"name": "playerscore",
+				"type": "String"
+			}
+		]
+	}
+}
