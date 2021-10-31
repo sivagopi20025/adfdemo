@@ -1,0 +1,9 @@
+{
+	"name": "cloudpathadfv2git2810",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dc4f748c-12b1-46b1-9d82-2a6760b50575",
+		"tenantId": "d91d99b3-e177-4ea7-9a4f-d51d8b999ee0"
+	}
+}
