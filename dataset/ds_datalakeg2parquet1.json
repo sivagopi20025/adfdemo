@@ -1,0 +1,19 @@
+{
+	"name": "ds_datalakeg2parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_bgckvkdatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "humanresource1"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

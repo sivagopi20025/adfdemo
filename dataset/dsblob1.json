@@ -6,9 +6,6 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"folderpath": {
-				"type": "string"
-			},
 			"filepath": {
 				"type": "string"
 			}
@@ -22,10 +19,7 @@
 					"value": "@dataset().filepath",
 					"type": "Expression"
 				},
-				"container": {
-					"value": "@dataset().folderpath",
-					"type": "Expression"
-				}
+				"container": "humannresource"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
