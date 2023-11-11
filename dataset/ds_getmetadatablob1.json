@@ -1,0 +1,35 @@
+{
+	"name": "ds_getmetadatablob1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "bgckvkblobstorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "humannresource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "DEPARTMENTID",
+				"type": "String"
+			},
+			{
+				"name": "DEPTNAME",
+				"type": "String"
+			},
+			{
+				"name": "GROUPNAME",
+				"type": "String"
+			}
+		]
+	}
+}
